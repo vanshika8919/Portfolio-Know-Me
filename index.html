@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-style: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 110px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+        }
+
+        .leftsection button {
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 3px;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .leftsection .buttons {
+            padding: 30px 0;
+        }
+
+        .rightsection {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection span {
+            font-size: 20px;
+            line-height: 1.8;
+            font-weight: 400;
+            color: #999999;
+        }
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .thirdSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .thirdSection p {
+            font-size: 25px;
+            color: rgb(184, 172, 172);
+        }
+
+        .fourthSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .fourthSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .fourthSection h3 {
+            font-size: 1.2rem;
+        }
+
+        .fourthSection p {
+            font-size: 20px;
+            color: rgb(184, 172, 172);
+        }
+
+        .fifthSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .fifthSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .fifthSection p {
+            font-size: 20px;
+            color: rgb(184, 172, 172);
+        }
+
+        .sixthSection {
+            max-width: 80vw;
+            margin: 120px 120px;
+        }
+
+        .sixthSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .sixthSection h3 {
+            font-size: 1.2rem;
+        }
+
+        .sixthSection p {
+            font-size: 18px;
+            color: rgb(184, 172, 172);
+        }
+
+        footer {
+            background-color: #0c0c1a;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        .footer ul li a{
+            color: white;
+        }
+
+        .footer ul li a:hover{
+            color: rgb(148, 148, 157);
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        @media screen and (max-width: 1400px) {
+            .firstsection {
+                flex-direction: column-reverse;
+                margin: 0%;
+            }
+
+            nav{
+                flex-direction: column;
+            }
+
+            .leftsection{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .secondSection{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .thirdSection{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .fourthSection{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .fifthSection{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .sixthSection{
+                display: flex;
+                flex-direction: column;
+                align-items: right;
+            }
+           footer{
+            display: none;
+           }
+
+           body{
+            min-width: fit-content;
+           }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Know Me Vanshika Nizampuram</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About Me">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Work Experience/Projects">Work Experience/Projects</a></li>
+                    <li><a href="#Achievements">Achievements</a></li>
+                    <li><a href="#Hobbies">Hobbies</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Home" class="firstsection">
+            <div class="leftsection">
+                <div>Hi, My name is <span class="purple">Vanshika</span> and I am a fresher looking for opportunities.</div>
+                <div><span id="element"></span>
+                    <div class="button">
+                        <button class="btn" onclick="document.location='https://drive.google.com/file/d/1DafPvAnF1FClxmSX5QTbiNofj9y_lELx/view?usp=sharing'">View Resume</button>
+                        <button class="btn" onclick="document.location='https://github.com/vanshika8919'">Visit Github</button>
+                    </div>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="Myimg3.jpg" alt style="width: auto">
+            </div>
+
+        </section>
+        <hr>
+        <section id="About Me" class="thirdSection">
+            <h1>About Me</h1><br>
+            <p>Hey there! I'm Vanshika Nizampuram a dedicated and hardworking student in my third year IT at Sreenidhi
+                Institute of Science and Technology. I approach my work with a blend of creativity and precision,
+                ensuring that each project reflects not only on technical level but also a genuine passion for the
+                craft. I am currently looking for an internship opportunity that allows me to apply and expand my
+                skills. If you have a challenging project or an exciting opportunity, I would love to hear from you!</p>
+        </section>
+        <hr>
+        <section id="Skills" class="secondSection">
+            <h1>Skills</h1><br>
+            <span>Java</span><br>
+            <span>C Programming</span><br>
+            <span>Html5</span><br>
+            <span>CSS</span><br>
+            <span>Basics of Informatica</span><br>
+            <span>Basics of SQL</span><br>
+            <span>Machine Learning</span><br>
+            <span>Python</span>
+        </section>
+        <hr>
+        <section id="Work Experience/Projects" class="fourthSection">
+            <h1>Work Experience/Projects</h1><br>
+            <h3>Intern, Amazon</h3><br>
+            <p>During my AWS machine learning internship course, I gained expertise in AWS services like EC2, learned
+                machine learning concepts, and skills in data preprocessing, model development, and deployment. I
+                explored real-world applications, learned about ethical considerations, and improved collaboration and
+                communication skills. Most importantly, I embraced continuous learning in this rapidly evolving field.
+            </p><br>
+            <h3>Outfit Recommendation System
+            </h3><br>
+            <p>The idea of this project is to recommend an outfit which has significant improvement over traditional
+                methods. By incorporating user preferences and machine learning, this system personalizes the user
+                experience and suggests stylish outfits that carter to individual tastes. This can not only make the
+                process of choosing an outfit more efficient but also more enjoyable.</p>
+        </section>
+        <hr>
+        <section id="Achievements" class="fifthSection">
+            <h1>Achievements</h1><br>
+            <h3>National Cycling Competition</h3><br>
+            <p>Represented Telangana State in national level and finished among the top five people.</p><br>
+            <h3>State Level Competition</h3><br>
+            <p>Represented Hyderabad district in state level and achieved several gold medal.</p><br>
+            <h3>Prticipated in WIE Conferencia 5.0</h3><br>
+            <p>Delegate, AIPPM - WIE Conferencia 5.0, IEEE SNIST<br>
+            <ul>
+                <li>Represented Maneka Gandhi at the IEEE-organized WIE Conferencia 5.0.</li>
+                <li>Contributed to high-level discussions on the legalization of same-sex marriage in India.</li>
+                <li>Enhanced negotiation skills and built a professional network.</li>
+                <li>Demonstrated effective representation and communication.</li>
+            </ul>
+            </p><br>
+        </section>
+        <hr>
+        <section id="Hobbies" class="sixthSection">
+            <h1>Hobbies</h1><br>
+            <h3>Listening to Music</h3><br>
+            <p>I enjoy listening to music by pop artists such as Taylor Swift, Billie Eilish, Halsey, and Miley Cyrus.
+                They are some of my favorite artists.</p><br>
+            <h3>Watching Web Series</h3><br>
+            <p>I like to watch web series like Friends, The Morning Show, The Orville, The Big Bang Theory, and How I
+                Met Your Mother. I enjoy classics like these, and my favorite genre is sci-fi.</p><br>
+            <h3>Reading Books</h3><br>
+            <p>I like to read books in my free time and some of the novels that I have read include Fool Me Once by
+                Harlan Coben, A Stranger in the Mirror by Sidney Sheldon, Fire and Blood by George R.R. Martin etc.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Vanshika's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About Me">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Work Experience/Projects"> Work Experience/Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li><a href="#Achievements">Achievements</a></li>
+                    <li><a href="#Hobbies">Hobbies</a></li>
+                </ul>
+            </div>
+            <div class="footer-rights">
+                Copyrights &#169; www.knowmevanshika.com | All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Passionate about my work', 'Java enthusiast', 'National Level Cyclist'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
